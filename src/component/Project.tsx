@@ -1,6 +1,6 @@
 // import React, { useState } from "react";
 
-const Article = () => {
+const Project = () => {
   // const [currentPage, setCurrentPage] = useState(1);
   // const itemsPerPage = 4;
 
@@ -37,42 +37,49 @@ const Article = () => {
   // const currentItems = projects.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <section className="container mx-auto py-10 px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8 bg-blue-100 text-black" id="project">
-      <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-center lg:mb-10 mb-4">
-        Our Project
-      </h2>
-      <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-blue-400 text-white p-4 lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start min-h-[300px]"
-          >
-            <div className="w-full sm:w-1/2 relative">
-              <h3 className="text-base sm:text-lg xl:text-xl font-semibold py-2">
-                {project.heading}
-              </h3>
-              <div className="relative h-[150px] sm:h-[180px] md:h-[200px]">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="absolute bottom-[-120px] sm:bottom-[-5px] lg:bottom-[-100px] h-[250px] sm:h-[200px] lg:h-[300px] w-full left-0 rounded-xl shadow-lg object-cover object-center "
-                />
+    <section
+      className=" py-10 px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8 bg-blue-100 text-black"
+      id="project"
+    >
+      <div className="container mx-auto">
+        <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-center sm:mb-10 lg:mb-10 mb-4">
+          Our Project
+        </h2>
+        <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-blue-400 text-white p-4 lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start min-h-[300px]"
+            >
+              <div className="w-full sm:w-1/2 relative">
+                <h3 className="text-base sm:text-lg xl:text-xl font-semibold py-2">
+                  {project.heading}
+                </h3>
+                <div className="relative h-[150px] sm:h-[180px] md:h-[200px]">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute bottom-[-120px] sm:bottom-[-5px] lg:bottom-[-100px] h-[250px] sm:h-[200px] lg:h-[300px] w-full left-0 rounded-xl shadow-lg object-cover  "
+                  />
+                </div>
+              </div>
+              <div className="sm:ml-4 mt-4 sm:mt-0 w-full sm:w-1/2 text-left z-10 flex flex-col justify-center h-full">
+                <span className="text-base sm:text-lg lg:text-xl font-semibold text-gray-100">
+                  {project.title}
+                </span>
+                <p className="text-sm sm:text-xs lg:text-base mt-1 text-justify text-gray-200">
+                  {project.desc}
+                </p>
               </div>
             </div>
-            <div className="sm:ml-4 mt-4 sm:mt-0 w-full sm:w-1/2 text-left z-10 flex flex-col justify-center h-full">
-              <div className="w-3 h-3 bg-white rounded-full mb-1" />
-              <span className="text-base sm:text-lg lg:text-xl font-semibold">
-                {project.title}
-              </span>
-              <p className="text-sm sm:text-xs lg:text-base mt-1 text-justify">
-                {project.desc}
-              </p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-      <div className="w-full flex justify-center items-center mt-4">
-        <a href="/explore" className="bg-blue-500 text-lg hover:bg-blue-600 text-white px-8 py-2 rounded-md">
+      <div className="w-full lg:flex justify-center items-center mt-14 hidden  sm:flex">
+        <a
+          href="/explore"
+          className="bg-blue-500 text-lg hover:bg-blue-600 text-white px-8 py-2 rounded-md"
+        >
           Explore
         </a>
       </div>
@@ -140,4 +147,4 @@ const Article = () => {
   );
 };
 
-export default Article;
+export default Project;

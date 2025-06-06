@@ -1,3 +1,4 @@
+import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
 
 // const [currentPage, setCurrentPage] = useState(1);
@@ -39,7 +40,7 @@ const Explore = () => {
   return (
     <>
       <Navbar />
-      <section className="container mt-17 mx-auto py-10 px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8 bg-blue-100 text-black">
+      <section className="container mt-17 mx-auto py-10 px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8 text-black">
         <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-center lg:mb-10 mb-4">
           Our Project
         </h2>
@@ -139,6 +140,7 @@ const Explore = () => {
           ))}
         </div>
       </section>
+      <Footer />
     </>
   );
 };

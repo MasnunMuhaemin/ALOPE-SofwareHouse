@@ -37,7 +37,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   );
 };
 
-const Accordion: React.FC = () => {
+const Faq: React.FC = () => {
   const data = [
     {
       title: "Apa itu ALOPE?",
@@ -68,15 +68,19 @@ const Accordion: React.FC = () => {
   };
 
   return (
-    <section className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-8 py-10 sm:py-14 lg:py-20 " id="faq">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 sm:gap-12 xl:gap-20">
-        <div className="w-full lg:w-1/2">
+    <section
+      className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-8 py-10 sm:py-14 lg:py-20 "
+      id="faq"
+    >
+      <div className="flex flex-col lg:flex-row items-center lg:items-start">
+        <div className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="/img/logo.png"
+            src="/img/faq.png"
             alt="FAQ Illustration"
-            className="w-full max-h-[300px] sm:max-h-[400px] lg:max-h-[450px]  xl:h-auto object-cover hidden lg:block"
+            className="w-[400px] xl:w-[450px] object-cover object-center hidden lg:block"
           />
         </div>
+
         <div className="w-full lg:w-1/2 lg:mt-16">
           <h2 className="text-4xl mb-2 sm:text-2xl md:text-3xl xl:text-4xl font-bold ">
             FAQ
@@ -98,4 +102,4 @@ const Accordion: React.FC = () => {
   );
 };
 
-export default Accordion;
+export default Faq;

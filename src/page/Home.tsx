@@ -1,18 +1,19 @@
 import Navbar from "../component/Navbar";
-import Header from "../component/Header";
-import Course from "../component/Course";
-import Article from "../component/Article";
-import Accordion from "../component/Accordion";
+
 import Footer from "../component/Footer";
+import Header from "../component/Header";
+import WhatWeDo from "../component/WhatWeDo";
+import Project from "../component/Project";
+import Faq from "../component/Faq";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Header />
-      <Course />
-      <Article />
-      <Accordion />
+      <WhatWeDo />
+      <Project />
+      <Faq />
       <Footer />
     </>
   );
