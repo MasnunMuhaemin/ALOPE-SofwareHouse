@@ -1,0 +1,31 @@
+{
+  "id": 1,
+  "title": "Nuteam",
+  "mainImage": "/img/project/project_nuteam.png",
+  "info": [
+    { "label": "Client", "value": "Johan" },
+    { "label": "Platform", "value": "Website" },
+    { "label": "Timeline", "value": "2025" },
+    { "label": "Website", "value": "https://alope.id/" }
+  ],
+  "sections": [
+    {
+      "title": "About The Project",
+      "image": "/img/project/card_nuteam1.png",
+      "reverse": true,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "title": "Feature",
+      "image": "/img/project/card_nuteam2.png",
+      "reverse": false,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "title": "Stack",
+      "image": "/img/project/card_nuteam3.png",
+      "reverse": true,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+  ]
+}
