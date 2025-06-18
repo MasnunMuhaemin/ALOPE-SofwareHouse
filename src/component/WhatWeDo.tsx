@@ -1,15 +1,17 @@
-
 const Course = () => {
   return (
     <>
-      <section className="container mx-auto py-10 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 bg-white text-black" id="learning">
+      <section
+        className="container mx-auto mt-16 py-10 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-8 bg-white text-black"
+        id="learning"
+      >
         <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-center mb-8 sm:mb-10">
           What We Do
         </h2>
         <div className="flex flex-col lg:flex-row gap-6">
-          <div className="relative lg:w-1/2 rounded-xl overflow-hidden border border-blue-300 shadow-md ">
+          <div className="relative lg:w-1/2 rounded-xl overflow-hidden border border-blue-300 shadow-md  ">
             <div
-              className="absolute inset-0  lg:w-1/2  bg-blue-200  z-0 hidden lg:block"
+              className="absolute inset-0   lg:w-1/2  bg-blue-200  z-0 hidden lg:block"
               style={{
                 backgroundImage: `url('/img/image.png')`,
                 backgroundSize: "cover",
@@ -17,7 +19,7 @@ const Course = () => {
                 backgroundRepeat: "no-repeat",
               }}
             ></div>
-            <div className="relative z-10 p-4 sm:p-6 flex flex-col lg:flex-row items-center">
+            <div className="relative z-10 p-4 sm:p-6 gap-6 flex flex-col lg:flex-row items-center">
               <div className="flex-1"></div>
               <div className="flex-1  lg:mt-10 lg:ml-6 justify-center items-center">
                 <h3 className="text-xl sm:text-3xl font-bold mb-2">Academy</h3>
@@ -25,7 +27,10 @@ const Course = () => {
                   Program pelatihan coding dan teknologi untuk mempersiapkan
                   talenta digital siap kerja.
                 </p>
-                <a className="flex items-center w-fit gap-1 bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm" href="https://alope.id/" >
+                <a
+                  className="flex items-center w-fit gap-1 bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-md text-xs sm:text-sm"
+                  href="https://alope.id/"
+                >
                   View Detail
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -42,17 +47,6 @@ const Course = () => {
                     />
                   </svg>
                 </a>
-
-                <div className="flex items-center space-x-4 overflow-x-auto scrollbar-hide mt-4">
-                  {[...Array(5)].map((_, i) => (
-                    <img
-                      key={i}
-                      src="/img/alope.jpg"
-                      alt="Code"
-                      className="w-16 border border-blue-500 h-10 md:w-20 md:h-12 rounded-md object-cover"
-                    />
-                  ))}
-                </div>
               </div>
             </div>
           </div>
