@@ -1,31 +1,95 @@
-{
-  "id": 1,
-  "title": "Nuteam",
-  "mainImage": "/img/project/project_nuteam.png",
-  "info": [
-    { "label": "Client", "value": "Johan" },
-    { "label": "Platform", "value": "Website" },
-    { "label": "Timeline", "value": "2025" },
-    { "label": "Website", "value": "https://alope.id/" }
-  ],
-  "sections": [
-    {
-      "title": "About The Project",
-      "image": "/img/project/card_nuteam1.png",
-      "reverse": true,
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    },
-    {
-      "title": "Feature",
-      "image": "/img/project/card_nuteam2.png",
-      "reverse": false,
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    },
-    {
-      "title": "Stack",
-      "image": "/img/project/card_nuteam3.png",
-      "reverse": true,
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "title": "Nuteam",
+    "mainImage": "/img/project/project_nuteam.png",
+    "info": [
+      { "label": "Client", "value": "Johan" },
+      { "label": "Platform", "value": "Website" },
+      { "label": "Timeline", "value": "2025" },
+      { "label": "Website", "value": "https://alope.id/" }
+    ],
+    "sections": [
+      {
+        "title": "About The Project",
+        "image": "/img/project/card_nuteam1.png",
+        "reverse": true,
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      {
+        "title": "Feature",
+        "image": "/img/project/card_nuteam2.png",
+        "reverse": false,
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      {
+        "title": "Stack",
+        "image": "/img/project/card_nuteam3.png",
+        "reverse": true,
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Medicare",
+    "mainImage": "/img/project/project_safrenz.png",
+    "info": [
+      { "label": "Client", "value": "Dr. Aulia" },
+      { "label": "Platform", "value": "Mobile" },
+      { "label": "Timeline", "value": "2025" },
+      { "label": "Website", "value": "https://medicareapp.id/" }
+    ],
+    "sections": [
+      {
+        "title": "About The Project",
+        "image": "/img/project/card_safrenz1.png",
+        "reverse": true,
+        "description": "Medicare is a healthcare app that connects patients with doctors for online consultations, appointments, and medical records."
+      },
+      {
+        "title": "Feature",
+        "image": "/img/project/card_safrenz2.png",
+        "reverse": false,
+        "description": "Features include telemedicine, e-prescriptions, doctor chat, appointment scheduling, and health reminders."
+      },
+      {
+        "title": "Stack",
+        "image": "/img/project/card_safrenz3.png",
+        "reverse": true,
+        "description": "Built using React Native for mobile, React.js for web, Node.js for backend, and MongoDB as database."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "EduTrack",
+    "mainImage": "/img/project/project_invitation.png",
+    "info": [
+      { "label": "Client", "value": "EduNation" },
+      { "label": "Platform", "value": "Web Platform" },
+      { "label": "Timeline", "value": "2023–2024" },
+      { "label": "Website", "value": "https://edutrack.id/" }
+    ],
+    "sections": [
+      {
+        "title": "About The Project",
+        "image": "/img/project/card_invitation1.png",
+        "reverse": true,
+        "description": "EduTrack is an LMS (Learning Management System) platform developed to help institutions track student learning progress and deliver online courses."
+      },
+      {
+        "title": "Feature",
+        "image": "/img/project/card_invitation2.png",
+        "reverse": false,
+        "description": "Core features include course management, video lessons, quizzes, progress tracking, and discussion forums."
+      },
+      {
+        "title": "Stack",
+        "image": "/img/project/card_invitation3.png",
+        "reverse": true,
+        "description": "Developed using Laravel, Vue.js, PostgreSQL, and integrated with video streaming services."
+      }
+    ]
+  }
+]

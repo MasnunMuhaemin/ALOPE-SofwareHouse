@@ -1,8 +1,14 @@
 import Navbar from "../component/Navbar";
 import data from "../data/project.json";
+import { useParams } from "react-router-dom";
 
 const Detail = () => {
-  const { title, mainImage, info, sections } = data;
+  const { id } = useParams();
+  const project = data.find((p) => p.id === Number(id));
+
+  if (!project) return <div>Project not found</div>; 
+
+  const { title, mainImage, info, sections } = project;
 
   return (
     <>
@@ -10,10 +16,8 @@ const Detail = () => {
       <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24 overflow-hidden">
         <div className="relative mt-10 py-10 space-y-10">
           <div className="absolute inset-0 -z-10">
-            <div className="absolute top-[30%] left-[60%] w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] sm:left-[55%] md:w-[500px] md:h-[500px] md:left-2/3 bg-[#F0C322] opacity-30 rounded-full blur-3xl" />
-            <div className="absolute top-10 left-10 w-[180px] h-[150px] sm:left-20 sm:w-[300px] sm:h-[250px] md:left-56 md:w-[450px] md:h-[350px] bg-[#2276F0] opacity-20 rounded-full blur-2xl" />
-            <div className="absolute bottom-10 left-6 w-[200px] h-[180px] sm:left-10 sm:w-[350px] sm:h-[300px] md:left-11 md:w-[500px] md:h-[400px] bg-[#673EF0] opacity-20 rounded-full blur-2xl" />
           </div>
+
           <div className="z-10">
             <div
               onClick={() => window.history.back()}
@@ -33,7 +37,7 @@ const Detail = () => {
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
-              <span className="text-xs sm:text-sm">Go Back</span>
+              <span>Go Back</span>
             </div>
             <div className="text-center mt-6">
               <h1 className="inline-block text-xl sm:text-3xl lg:text-4xl font-bold border-b-2 border-[#5998F4] pb-2">
@@ -54,7 +58,6 @@ const Detail = () => {
                           href={item.value}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="no-underline"
                         >
                           {new URL(item.value).host}
                         </a>
