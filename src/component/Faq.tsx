@@ -69,7 +69,7 @@ const Faq: React.FC = () => {
 
   return (
     <section
-      className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-8 py-10 sm:py-14 lg:py-20 "
+      className="container mx-auto px-3 md:px-6 lg:px-8 xl:px-8 py-10 sm:py-14 lg:py-20 "
       id="faq"
     >
       <div className="flex flex-col lg:flex-row items-center lg:items-start">

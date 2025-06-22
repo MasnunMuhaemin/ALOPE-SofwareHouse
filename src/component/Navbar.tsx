@@ -8,15 +8,15 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 py-4 px-6 sm:px-6 md:px-6 lg:px-8 xl:px-8">
-        <div className="container mx-auto">
+      <nav className="fixed top-0 left-0 right-0 backdrop-blur shadow-sm z-50 py-4 px-3 sm:px-6 md:px-6 lg:px-8 xl:px-8">
+        <div className="container mx-auto ">
           <div className="max-w-screen-2xl mx-auto flex justify-between items-center">
             <h2 className="font-bold text-lg sm:text-xl md:text-2xl text-zinc-900">
               Alope Software House
             </h2>
 
             <div className="hidden md:flex items-center gap-3 sm:gap-4 md:gap-6">
-              <ul className="flex gap-4 lg:gap-6 text-sm md:text-base text-zinc-900">
+              <ul className="flex gap-4 lg:gap-6 text-sm  md:text-base text-zinc-900">
                 <li>
                   <a href="/" className="hover:underline">
                     Home
