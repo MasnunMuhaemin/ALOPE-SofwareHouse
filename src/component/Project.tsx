@@ -38,13 +38,19 @@ const Project = () => {
 
   return (
     <section
-      className=" py-10 px-4 sm:px-6 md:px-10 lg:px-8 xl:px-8 bg-blue-100 text-black"
+      className=" py-10 px-3 sm:px-6 md:px-6 lg:px-8 xl:px-8 bg-blue-100 text-black"
       id="project"
     >
       <div className="container mx-auto">
-        <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-center sm:mb-10 lg:mb-10 mb-4">
-          Our Project
-        </h2>
+        <div className="flex justify-between items-center mb-4 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold">
+            <span className="text-blue-500">Our</span> Works
+          </h2>
+
+          <a className="px-8 hidden sm:block  py-2 border border-blue-600 text-blue-600 rounded-full font-medium hover:bg-blue-500 hover:text-white transition duration-300">
+            See More Of Our Works
+          </a>
+        </div>
         <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
@@ -74,14 +80,6 @@ const Project = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="w-full lg:flex justify-center items-center mt-14 hidden  sm:flex">
-        <a
-          href="/explore"
-          className="bg-blue-500 text-lg hover:bg-blue-600 text-white px-8 py-2 rounded-md"
-        >
-          Explore
-        </a>
       </div>
 
       {/* <div className="hidden sm:flex justify-center mt-8 space-x-4">
