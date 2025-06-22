@@ -15,7 +15,7 @@ const Project = () => {
       heading: "Mobile",
       title: "Wedding",
       desc: "Pengembangan aplikasi mobile lintas platform dengan performa tinggi menggunakan React Native.",
-      image: "/img/wedding.png",
+      image: "/img/invitations.png",
     },
     {
       heading: "Website",
@@ -27,7 +27,7 @@ const Project = () => {
       heading: "Mobile",
       title: "Travel",
       desc: "Desain antarmuka aplikasi mobile yang estetis, intuitif, dan fokus pada pengalaman pengguna.",
-      image: "/img/travel.png",
+      image: "/img/travelop.png",
     },
   ];
 
@@ -65,7 +65,7 @@ const Project = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute bottom-[-120px] sm:bottom-[-5px] lg:bottom-[-100px] h-[250px] sm:h-[200px] lg:h-[300px] w-full left-0 rounded-xl shadow-lg object-cover  "
+                    className="absolute bottom-[-120px] sm:bottom-[-5px] lg:bottom-[-100px] h-[250px] sm:h-[200px] lg:h-[300px] w-full left-0 rounded-xl object-cover  "
                   />
                 </div>
               </div>

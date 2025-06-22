@@ -1,20 +1,18 @@
-import React from "react";
-
 const testimonials = [
   {
     name: "Client Name",
     message:
-      "Lorem ipsum dolor sit amet consectetur, ipsum et laoreet convallis justo fermentum purus ac. Vulputate ullamcorper malesuada enim. Tincidunt arcu orci integer vulputate eleifend.",
+      "ALOPE benar-benar memahami kebutuhan kami. Mereka tidak hanya membuat aplikasi yang fungsional, tapi juga memberikan insight strategis selama proses pengembangan. Hasil akhirnya responsif, user-friendly, dan sesuai ekspektasi.",
   },
   {
     name: "Client Name",
     message:
-      "Lorem ipsum dolor sit amet consectetur, ipsum et laoreet convallis justo fermentum purus ac. Vulputate ullamcorper malesuada enim. Tincidunt arcu orci integer vulputate eleifend.",
+      "Bekerja sama dengan ALOPE adalah pengalaman yang menyenangkan. Tim mereka komunikatif, cepat tanggap, dan sangat kompeten. Proyek selesai tepat waktu dengan kualitas yang luar biasa. Sangat direkomendasikan!",
   },
   {
     name: "Client Name",
     message:
-      "Lorem ipsum dolor sit amet consectetur, ipsum et laoreet convallis justo fermentum purus ac. Vulputate ullamcorper malesuada enim. Tincidunt arcu orci integer vulputate eleifend.",
+      "Kami mencari partner teknologi yang bisa diandalkan, dan ALOPE menjawab semua kebutuhan kami. Mulai dari desain hingga deployment, semuanya ditangani dengan profesional. Mereka bukan hanya vendor, tapi mitra sejati.",
   },
 ];
 
@@ -33,28 +31,27 @@ const Testimonial = () => {
   return (
     <section className="w-full bg-white py-16 px-4 sm:px-6 lg:px-20">
       <div className="container mx-auto">
-        <h2 className="text-center text-2xl md:text-3xl font-semibold mb-12 text-gray-800">
+        <h2 className="text-center text-2xl md:text-3xl font-bold mb-12 text-gray-800">
           What’s <span className="text-blue-600">Our Client’s</span> Say
         </h2>
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
               className="relative rounded-2xl bg-blue-100 px-6 py-8 shadow-md"
             >
-         
-              <div className="absolute -top-4 right-4 bg-blue-600 rounded-br-xl rounded-tl-xl p-3">
+              <div className="absolute -top-4 -right-4 rounded-tr-3xl bg-blue-600 w-12 h-12 flex items-center justify-center shadow-lg">
                 <QuoteIcon className="text-white w-5 h-5" />
               </div>
 
-              <h3 className="text-gray-900 font-semibold text-lg mb-2">
+              <h3 className="text-lg text-gray-900 font-semibold lg:text-xl mb-2">
                 {testimonial.name}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-xs lg:text-base text-gray-600 leading-relaxed line-clamp-4  lg:line-clamp-5">
                 {testimonial.message}
               </p>
 
-              <div className="absolute -bottom-4 left-4 bg-blue-600 rounded-tl-xl rounded-br-xl p-2">
+              <div className="absolute -bottom-5 -left-4 bg-blue-600 rounded-bl-3xl w-10 h-10 flex items-center justify-center shadow-lg">
                 <QuoteIcon className="text-white w-4 h-4 rotate-180" />
               </div>
             </div>
