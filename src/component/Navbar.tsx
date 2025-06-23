@@ -18,28 +18,28 @@ const Navbar = () => {
             <div className="hidden md:flex items-center gap-3 sm:gap-4 md:gap-6">
               <ul className="flex gap-4 lg:gap-6 text-sm  md:text-base text-zinc-900">
                 <li>
-                  <a href="/" className="hover:underline">
+                  <a href="#home" className="hover:underline">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#learning" className="hover:underline">
-                    Learning
-                  </a>
-                </li>
-                <li>
-                  <a href="#project" className="hover:underline">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="#faq" className="hover:underline">
+                  <a href="#aboutUs" className="hover:underline">
                     About Us
                   </a>
                 </li>
+                <li>
+                  <a href="#ourWorks" className="hover:underline">
+                    Our Works
+                  </a>
+                </li>
+                <li>
+                  <a href="#home" className="hover:underline">
+                    Blog
+                  </a>
+                </li>
               </ul>
-              <button className="bg-blue-500 shadow-blue-500 shadow-md hover:bg-blue-600 text-white text-xs sm:text-sm px-4 sm:px-5 lg:px-6 py-2 rounded-full">
-                Contact Us
+              <button className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-xs sm:text-sm px-4 sm:px-5 lg:px-6 py-2 rounded-full">
+                Get In Touch
               </button>
             </div>
 
