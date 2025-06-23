@@ -34,25 +34,34 @@ const Testimonial = () => {
         <h2 className="text-center text-2xl md:text-3xl font-bold mb-12 text-gray-800">
           What’s <span className="text-blue-600">Our Client’s</span> Say
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10 lg:gap-10">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative rounded-2xl bg-blue-100 px-6 py-8 shadow-md"
+              className="relative rounded-2xl px-6 py-8 "
+              style={{
+                backgroundImage: 'url("/img/rectangle-say.svg")',
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             >
-              <div className="absolute -top-4 -right-4 rounded-tr-3xl bg-blue-600 w-12 h-12 flex items-center justify-center shadow-lg">
-                <QuoteIcon className="text-white w-5 h-5" />
+              <div className="hidden sm:block lg:block">
+                <div className=" absolute -top-4 -right-4 rounded-tr-3xl bg-blue-600 w-12 h-12 flex items-center justify-center shadow-lg">
+                  <QuoteIcon className="text-white w-5 h-5" />
+                </div>
               </div>
-
-              <h3 className="text-lg text-gray-900 font-semibold lg:text-xl mb-2">
+              <h3 className="text-lg lg:px-4 text-gray-900 font-semibold lg:text-xl mb-2">
                 {testimonial.name}
               </h3>
-              <p className="text-xs lg:text-base text-gray-600 leading-relaxed line-clamp-4  lg:line-clamp-5">
+              <p className="text-xs lg:text-base lg:px-4 text-gray-600 line-clamp-4  lg:line-clamp-5">
                 {testimonial.message}
               </p>
 
-              <div className="absolute -bottom-5 -left-4 bg-blue-600 rounded-bl-3xl w-10 h-10 flex items-center justify-center shadow-lg">
-                <QuoteIcon className="text-white w-4 h-4 rotate-180" />
+              <div className="hidden sm:block lg:block">
+                <div className="absolute -bottom-5 -left-4 bg-blue-600 rounded-bl-3xl w-10 h-10 flex items-center justify-center shadow-lg">
+                  <QuoteIcon className="text-white w-4 h-4 rotate-180" />
+                </div>
               </div>
             </div>
           ))}

@@ -39,44 +39,54 @@ const Project = () => {
   return (
     <section
       className="relative py-10 px-3 sm:px-6 md:px-6 lg:px-8 xl:px-8 text-black overflow-hidden"
-      id="project"
+      id="ourWorks"
+      style={{
+        backgroundImage:
+          'url("/img/biru.svg"), url("/img/ungu.svg"), url("/img/kuning.svg")',
+        backgroundRepeat: "no-repeat, no-repeat",
+        backgroundSize: "cover, cover",
+        backgroundPosition: "center, center",
+      }}
     >
-      <div className="absolute inset-0 -z-10">
-        <img
-          src="/img/ungu.svg"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <img
-          src="/img/biru.svg"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <img
-          src="/img/kuning.svg"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
-
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-4 sm:mb-10">
           <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold">
             <span className="text-blue-500">Our</span> Works
           </h2>
 
-          <a className="px-8 hidden sm:block  py-2 border border-blue-600 text-blue-600 rounded-full font-medium hover:bg-blue-500 hover:text-white transition duration-300">
-            See More Of Our Works
-          </a>
+          <div className="hidden lg:block">
+            <a
+              href="#"
+              className=" group flex items-center gap-2 text-sm px-8 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-md ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition duration-300"
+            >
+              See More Of Our Works
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-4 h-4 transition duration-300 group-hover:fill-white"
+              >
+                <path d="M11.293 4.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-3.293-3.293a1 1 0 010-1.414z" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div className="hidden sm:grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-blue-400 text-white p-4 lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start min-h-[300px]"
+              className=" text-white p-4 lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start min-h-[300px]"
+              style={{
+                backgroundImage: 'url("/img/rectangle.svg")',
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             >
               <div className="w-full sm:w-1/2 relative">
-                <h3 className="text-base sm:text-lg xl:text-xl font-semibold py-2">
+                <h3 className="text-gray-200 text-base sm:text-lg xl:text-xl font-semibold py-2">
                   {project.heading}
                 </h3>
                 <div className="relative h-[150px] sm:h-[180px] md:h-[200px]">
@@ -88,10 +98,10 @@ const Project = () => {
                 </div>
               </div>
               <div className="sm:ml-4 mt-4 sm:mt-0 w-full sm:w-1/2 text-left z-10 flex flex-col justify-center h-full">
-                <span className="text-base sm:text-lg lg:text-xl font-semibold text-gray-100">
+                <span className="text-base sm:text-lg lg:text-xl font-semibold text-white">
                   {project.title}
                 </span>
-                <p className="text-sm sm:text-xs lg:text-base mt-1 text-justify text-gray-200">
+                <p className="text-sm sm:text-xs lg:text-base mt-1 text-justify text-gray-100">
                   {project.desc}
                 </p>
               </div>
@@ -152,9 +162,24 @@ const Project = () => {
               <p className="text-gray-600 text-xs mt-2 line-clamp-2">
                 {project.desc}
               </p>
-              <button className="mt-4 bg-blue-500 w-1/2 hover:bg-blue-600 text-white py-1 px-4 rounded-full">
-                Explore
-              </button>
+              <a
+                href="#"
+                className="group inline-flex items-center gap-2 text-xs mt-4 px-5 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-sm ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition-all duration-300"
+              >
+                <span className="transition-colors duration-300 group-hover:text-white">
+                  See More Of Our Works
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-4 h-4 transition-colors duration-300 group-hover:fill-white"
+                >
+                  <path d="M11.293 4.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-3.293-3.293a1 1 0 010-1.414z" />
+                </svg>
+              </a>
             </div>
           </div>
         ))}
