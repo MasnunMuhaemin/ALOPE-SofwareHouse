@@ -4,6 +4,7 @@ const WhatWeDo = () => {
       <section
         className="container mx-auto py-10 px-3 sm:px-6 lg:px-8 bg-white text-black"
         id="learning"
+       
       >
         <div className="mb-10 ">
           <h2 className="text-blue-600 font-semibold text-xl sm:text-2xl mb-2">
@@ -25,7 +26,7 @@ const WhatWeDo = () => {
 
           <div className="w-full lg:w-2/3 m-auto py-5 text-justify px-6">
             <div className="mb-6">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2">
                 Academy
               </h3>
               <p className="text-sm text-gray-600">
@@ -37,7 +38,7 @@ const WhatWeDo = () => {
             </div>
 
             <div className="mb-6">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2">
                 Web App
               </h3>
               <p className="text-sm text-gray-600">
@@ -48,7 +49,7 @@ const WhatWeDo = () => {
             </div>
 
             <div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2">
                 Mobile App
               </h3>
               <p className="text-sm text-gray-600">

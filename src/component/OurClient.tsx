@@ -1,5 +1,3 @@
-import React from "react";
-
 const logos = [
   "/img/logo.png",
   "/img/Alope.png",
@@ -14,6 +12,22 @@ const logos = [
 const OurClient = () => {
   return (
     <section className="flex justify-center items-center min-h-[450px] bg-gradient-to-r from-blue-200 to-purple-100">
+      <img
+        src="/img/ungu.svg"
+        alt=""
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+      />
+      <img
+        src="/img/biru.svg"
+        alt=""
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+      />
+      <img
+        src="/img/kuning.svg"
+        alt=""
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+      />
+
       <div className="container  mx-auto">
         <div className="max-w-7xl px-3 sm:px-6 lg:px-8 text-center">
           <p className="text-blue-600 font-medium text-xl sm:text-base lg:text-2xl">

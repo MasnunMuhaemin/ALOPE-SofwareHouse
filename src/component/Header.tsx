@@ -1,10 +1,7 @@
 const Header = () => {
   return (
-    <header
-      className="relative w-full px-0 bg-gradient-to-r from-blue-100 via-white to-yellow-100"
-      id="home"
-    >
-      <div className="container mx-auto  w-full min-h-[670px] flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-6 lg:px-8 xl:px-12">
+    <header className="relative w-full px-0 " id="home">
+      <div className="container mx-auto  w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-6 lg:px-8 xl:px-12">
         <div className="w-full md:w-1/2 text-center sm:text-left lg:text-left order-2 md:order-1">
           <h2 className="text-3xl lg:text-5xl xl:text-5xl font-bold text-slate-900 mb-2">
             Solusi Pembuatan
@@ -17,9 +14,13 @@ const Header = () => {
             <br className="hidden md:block" />
             solusi kreatif kami. Tenang saja, mari bekerja sama.
           </p>
-          <div className="flex gap-4 justify-center sm:justify-start mb-16">
-            <a className="px-16  py-2 border border-blue-600 text-blue-600 rounded-full font-medium hover:bg-blue-500 hover:text-white transition duration-300">
+          <div className="flex  mb-16">
+            <a
+              href="#"
+              className="flex px-8 border py-2 border-blue-600 text-blue-600 rounded-full font-medium hover:bg-blue-500 hover:text-white transition duration-300"
+            >
               Explore
+              <img src="/img/arrow-right.svg" className="" alt="" />
             </a>
           </div>
         </div>

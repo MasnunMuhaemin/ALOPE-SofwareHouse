@@ -38,9 +38,27 @@ const Project = () => {
 
   return (
     <section
-      className=" py-10 px-3 sm:px-6 md:px-6 lg:px-8 xl:px-8 bg-blue-100 text-black"
+      className="relative py-10 px-3 sm:px-6 md:px-6 lg:px-8 xl:px-8 text-black overflow-hidden"
       id="project"
     >
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="/img/ungu.svg"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <img
+          src="/img/biru.svg"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <img
+          src="/img/kuning.svg"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+      </div>
+
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-4 sm:mb-10">
           <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold">

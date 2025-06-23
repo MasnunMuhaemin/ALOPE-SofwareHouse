@@ -6,11 +6,11 @@ const AboutUs = () => {
           <h1 className="text-blue-600 text-xl sm:text-2xl font-semibold mb-2">
             About Us
           </h1>
-          <p className="text-base sm:text-xl lg:text-3xl font-bold text-justify text-gray-900 mb-8 max-w-xl leading-snug">
+          <p className="text-base sm:text-xl lg:text-2xl font-bold text-justify text-gray-900 mb-8 max-w-xl leading-snug">
             ALOPE adalah komunitas berbagi ilmu coding untuk pemula.
           </p>
 
-          <div className="bg-[#B8D4F8] rounded-xl mx-auto p-6 sm:p-8 flex items-center justify-center max-w-sm shadow-lg">
+          <div className="bg-gradient-to-r from-[#E2E8F0]  to-[#B8D4F8] rounded-xl mx-auto p-6 sm:p-8 flex items-center justify-center max-w-sm shadow-lg">
             <img
               src="/img/Alope.png"
               alt="ALOPE"
