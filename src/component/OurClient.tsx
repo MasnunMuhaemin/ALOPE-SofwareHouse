@@ -23,7 +23,7 @@ const OurClient = () => {
     >
       <div className="container  mx-auto">
         <div className="max-w-7xl px-3 sm:px-6 lg:px-8 text-center">
-          <p className="text-blue-600 font-medium text-xl sm:text-base lg:text-2xl">
+          <p className="text-blue-600 font-medium text-2xl lg:text-2xl">
             Our Client
           </p>
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mt-1">

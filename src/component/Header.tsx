@@ -17,7 +17,7 @@ const Header = () => {
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       />
       <div className="container mx-auto  w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-6 lg:px-8 xl:px-12">
-        <div className="w-full md:w-1/2 text-center sm:text-left mt-10 sm:mt-24 lg:mt-28 lg:text-left order-2 md:order-1">
+        <div className="w-full md:w-1/2 text-center sm:text-left  sm:mt-24 lg:mt-28 lg:text-left order-2 md:order-1">
           <h2 className="text-3xl lg:text-5xl xl:text-5xl font-bold text-slate-900 mb-2">
             Solusi Pembuatan
           </h2>

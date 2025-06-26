@@ -14,10 +14,10 @@ const WhatWeDo = () => {
       >
         <div className="container mx-auto">
           <div className="mb-10 ">
-            <h2 className="text-blue-600 font-semibold text-xl sm:text-2xl mb-2">
+            <h2 className="text-blue-600 font-semibold text-2xl sm:text-2xl mb-2">
               Our Services
             </h2>
-            <h1 className="text-xl sm:text-3xl lg:text-3xl font-bold text-gray-900">
+            <h1 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-gray-900">
               Our Top Services to Help You Grow.
             </h1>
           </div>
@@ -36,7 +36,7 @@ const WhatWeDo = () => {
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2">
                   Academy
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   Akademi kami menawarkan pembelajaran terstruktur dan
                   interaktif untuk membantu Anda mengembangkan keterampilan
                   secara fleksibel dan sesuai kebutuhan dunia nyata.
@@ -47,7 +47,7 @@ const WhatWeDo = () => {
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2">
                   Web App
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   Kami membangun aplikasi web responsif dan mudah digunakan,
                   dari solusi sederhana hingga platform kompleks.
                 </p>
@@ -57,7 +57,7 @@ const WhatWeDo = () => {
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2">
                   Mobile App
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   Kami menciptakan aplikasi seluler yang cepat, intuitif, dan
                   disesuaikan dengan kebutuhan Anda, memungkinkan pengguna
                   terlibat kapan saja dan di mana saja dengan pengalaman yang

@@ -51,10 +51,10 @@ const Testimonial = () => {
                   <QuoteIcon className="text-white w-5 h-5" />
                 </div>
               </div>
-              <h3 className="text-lg lg:px-4 text-gray-900 font-semibold lg:text-xl mb-2">
+              <h3 className="text-xl lg:px-4 text-gray-900 font-semibold lg:text-xl mb-2">
                 {testimonial.name}
               </h3>
-              <p className="text-xs lg:text-base lg:px-4 text-gray-600 line-clamp-4  lg:line-clamp-5">
+              <p className="text-sm lg:text-base lg:px-4 text-gray-600 line-clamp-4  lg:line-clamp-5">
                 {testimonial.message}
               </p>
 
