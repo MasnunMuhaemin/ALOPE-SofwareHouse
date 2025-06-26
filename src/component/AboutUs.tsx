@@ -12,12 +12,12 @@ const AboutUs = () => {
           backgroundPosition: "center, center",
         }}
       >
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+        <div className="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="">
-            <h1 className="text-blue-600 text-xl sm:text-2xl font-semibold mb-2">
+            <h1 className="text-blue-600 text-2xl sm:text-2xl font-semibold mb-2">
               About Us
             </h1>
-            <p className="text-base sm:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 mb-8 max-w-xl leading-snug">
+            <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 mb-8 max-w-xl leading-snug">
               ALOPE is a coding knowledge sharing community for beginners.
             </p>
 
@@ -41,9 +41,9 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="text-gray-700 ">
+          <div className="text-gray-700 px-1.5">
             <div className=" sm:mt-48 lg:mt-48">
-              <h2 className="text-lg sm:text-2xl font-semibold mb-4">
+              <h2 className="text-xl sm:text-2xl font-semibold mb-4">
                 Tentang ALOPE
               </h2>
               <p className="mb-6 text-sm sm:text-sm lg:text-base leading-relaxed  text-justify">

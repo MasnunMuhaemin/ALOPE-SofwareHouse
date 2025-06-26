@@ -156,10 +156,10 @@ const Project = () => {
                   />
                 </svg>
               </div>
-              <h4 className="font-semibold text-base text-gray-900">
+              <h4 className="font-semibold text-xl text-gray-900">
                 {project.title}
               </h4>
-              <p className="text-gray-600 text-xs mt-2 line-clamp-2">
+              <p className="text-gray-600 text-sm mt-2 line-clamp-2">
                 {project.desc}
               </p>
               <a
