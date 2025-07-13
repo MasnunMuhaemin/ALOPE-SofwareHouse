@@ -24,7 +24,7 @@ const Header = () => {
           <p className="text-3xl lg:text-5xl xl:text-5xl font-bold text-blue-500 mb-4">
             Software <span className="text-zinc-950">Anda</span>
           </p>
-          <p className="text-slate-500 text-xs md:text-sm lg:text-xl xl:text-xl mb-6 leading-relaxed">
+          <p className="text-slate-500 text-sm md:text-sm lg:text-xl xl:text-xl mb-6 leading-relaxed">
             Kami membantu bisnis Anda berkembang melalui{" "}
             <br className="hidden md:block" />
             solusi kreatif kami. Tenang saja, mari bekerja sama.
@@ -32,7 +32,7 @@ const Header = () => {
           <div className="flex gap-4 justify-center sm:justify-start mb-16">
             <a
               href="#"
-              className="group flex items-center gap-10 text-base px-8 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-md ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition duration-300"
+              className="group flex items-center gap-10 text-base  px-8 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-md ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition duration-300"
             >
               Explore
               <svg

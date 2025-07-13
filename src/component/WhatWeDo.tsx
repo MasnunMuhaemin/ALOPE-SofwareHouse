@@ -31,7 +31,7 @@ const WhatWeDo = () => {
               />
             </div>
 
-            <div className="w-full lg:w-2/3 m-auto py-5 text-justify px-4 lg:px-6">
+            <div className="w-full lg:w-2/3  m-auto text-justify px-4 lg:px-6">
               <div className="mb-4">
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2">
                   Academy

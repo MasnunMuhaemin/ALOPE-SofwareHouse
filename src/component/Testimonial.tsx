@@ -38,7 +38,7 @@ const Testimonial = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative rounded-2xl px-6 py-8 "
+              className="relative rounded-4xl px-6 py-8 "
               style={{
                 backgroundImage: 'url("/img/rectangle-say.svg")',
                 backgroundRepeat: "no-repeat",

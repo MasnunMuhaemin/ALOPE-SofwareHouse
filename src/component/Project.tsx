@@ -89,19 +89,21 @@ const Project = () => {
                 <h3 className="text-gray-200 text-base sm:text-lg xl:text-xl font-semibold py-2">
                   {project.heading}
                 </h3>
-                <div className="relative h-[150px] sm:h-[180px] md:h-[200px]">
+
+                <div className="">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute bottom-[-120px] sm:bottom-[-5px] lg:bottom-[-100px] h-[250px] sm:h-[200px] lg:h-[300px] w-full left-0 rounded-xl object-cover  "
+                    className=" w-full left-0 object-cover"
                   />
                 </div>
               </div>
+
               <div className="sm:ml-4 mt-4 sm:mt-0 w-full sm:w-1/2 text-left z-10 flex flex-col justify-center h-full">
                 <span className="text-base sm:text-lg lg:text-xl font-semibold text-white">
                   {project.title}
                 </span>
-                <p className="text-sm sm:text-xs lg:text-base mt-1 text-justify text-gray-100">
+                <p className="text-sm sm:text-xs lg:text-base mt-1 text-gray-100">
                   {project.desc}
                 </p>
               </div>
@@ -140,22 +142,7 @@ const Project = () => {
               }}
             ></div>
             <div className="relative px-4 py-6">
-              <div className="absolute -top-5 left-6 bg-blue-500 text-white p-2 rounded-full shadow-md">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 5v14l7-7 7 7V5a2 2 0 00-2-2H7a2 2 0 00-2 2z"
-                  />
-                </svg>
-              </div>
+           
               <h4 className="font-semibold text-xl text-gray-900">
                 {project.title}
               </h4>

@@ -62,12 +62,12 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-between items-center px-4 py-2">
-          <h3 className="font-bold text-lg">Menu</h3>
+          <h3 className="font-bold text-xl">Menu</h3>
           <button onClick={closeSidebar} aria-label="Close">
             <span className="text-2xl">&times;</span>
           </button>
         </div>
-        <ul className="flex flex-col gap-4 p-4 text-xs text-zinc-900">
+        <ul className="flex flex-col gap-4 p-4 text-sm text-zinc-900">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -82,8 +82,8 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="px-4">
-          <button className="w-[100px] bg-blue-500 hover:bg-blue-500 text-white py-1 rounded-full">
-            Contact Us
+          <button className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-sm px-4 sm:px-5 lg:px-6 py-2 rounded-full">
+            Get In Touch
           </button>
         </div>
       </div>

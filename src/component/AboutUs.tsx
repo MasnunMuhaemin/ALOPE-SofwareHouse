@@ -42,7 +42,7 @@ const AboutUs = () => {
           </div>
 
           <div className="text-gray-700 px-1.5">
-            <div className=" sm:mt-48 lg:mt-48">
+            <div className=" sm:mt-48 lg:mt-52">
               <h2 className="text-xl sm:text-2xl font-semibold mb-4">
                 Tentang ALOPE
               </h2>
@@ -55,7 +55,7 @@ const AboutUs = () => {
               </p>
             </div>
 
-            <div className="w-full flex items-center justify-start mt-10">
+            <div className="w-full flex items-center justify-start mt-8">
               <a
                 href="#"
                 className="group flex items-center gap-4 text-sm px-8 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-md ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition duration-300"
