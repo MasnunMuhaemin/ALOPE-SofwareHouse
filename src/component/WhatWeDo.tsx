@@ -2,19 +2,19 @@ const WhatWeDo = () => {
   return (
     <>
       <section
-        className="relative py-10 px-3 sm:px-4 lg:px-8 bg-white text-black"
+        className="relative py-10 px-3 sm:px-4 lg:px-8  text-black"
         id="learning"
-        style={{
-          backgroundImage:
-            'url("/img/vector-ungu.svg"), url("/img/vector-biru.svg")',
-          backgroundRepeat: "no-repeat, no-repeat",
-          backgroundSize: "cover, cover",
-          backgroundPosition: "center, center",
-        }}
+        // style={{
+        //   backgroundImage:
+        //     'url("/img/vector-ungu.svg"), url("/img/vector-biru.svg")',
+        //   backgroundRepeat: "no-repeat, no-repeat",
+        //   backgroundSize: "cover, cover",
+        //   backgroundPosition: "center, center",
+        // }}
       >
         <div className="container mx-auto">
           <div className="mb-10 ">
-            <h2 className="text-blue-600 font-semibold text-2xl sm:text-2xl mb-2">
+            <h2 className="text-blue-600 font-semibold text-2xl sm:text-3xl mb-2">
               Our Services
             </h2>
             <h1 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-gray-900">
@@ -31,7 +31,7 @@ const WhatWeDo = () => {
               />
             </div>
 
-            <div className="w-full lg:w-2/3 m-auto py-5 text-justify px-4 lg:px-6">
+            <div className="w-full lg:w-2/3  m-auto text-justify my-5 sm:my-5 px-4 lg:px-6">
               <div className="mb-4">
                 <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-2">
                   Academy
