@@ -1,8 +1,6 @@
 // import React, { useState } from "react";
 
 const Project = () => {
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const itemsPerPage = 4;
 
   const projects = [
     {
@@ -31,26 +29,23 @@ const Project = () => {
     },
   ];
 
-  // const totalPages = Math.ceil(projects.length / itemsPerPage);
-  // const indexOfLastItem = currentPage * itemsPerPage;
-  // const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  // const currentItems = projects.slice(indexOfFirstItem, indexOfLastItem);
+
 
   return (
     <section
       className="relative py-10 px-3 sm:px-6 md:px-6 lg:px-8 xl:px-8 text-black overflow-hidden"
       id="ourWorks"
-      style={{
-        backgroundImage:
-          'url("/img/biru.svg"), url("/img/ungu.svg"), url("/img/kuning.svg")',
-        backgroundRepeat: "no-repeat, no-repeat",
-        backgroundSize: "cover, cover",
-        backgroundPosition: "center, center",
-      }}
+      // style={{
+      //   backgroundImage:
+      //     'url("/img/biru.svg"), url("/img/ungu.svg"), url("/img/kuning.svg")',
+      //   backgroundRepeat: "no-repeat, no-repeat",
+      //   backgroundSize: "cover, cover",
+      //   backgroundPosition: "center, center",
+      // }}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-4 sm:mb-10">
-          <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold">
+          <h2 className="text-3xl xl:text-4xl font-bold">
             <span className="text-blue-500">Our</span> Works
           </h2>
 
@@ -77,31 +72,33 @@ const Project = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className=" text-white p-4 lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start min-h-[300px]"
-              style={{
-                backgroundImage: 'url("/img/rectangle.svg")',
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className="bg-blue-400 p-4  lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start"
+              // style={{
+              //   backgroundImage: 'url("/img/rectangle.svg")',
+              //   backgroundRepeat: "no-repeat",
+              //   backgroundSize: "cover",
+              //   backgroundPosition: "center",
+              // }}
             >
               <div className="w-full sm:w-1/2 relative">
                 <h3 className="text-gray-200 text-base sm:text-lg xl:text-xl font-semibold py-2">
                   {project.heading}
                 </h3>
-                <div className="relative h-[150px] sm:h-[180px] md:h-[200px]">
+
+                <div className="">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute bottom-[-120px] sm:bottom-[-5px] lg:bottom-[-100px] h-[250px] sm:h-[200px] lg:h-[300px] w-full left-0 rounded-xl object-cover  "
+                    className=" w-full h-full left-0 object-cover"
                   />
                 </div>
               </div>
+
               <div className="sm:ml-4 mt-4 sm:mt-0 w-full sm:w-1/2 text-left z-10 flex flex-col justify-center h-full">
                 <span className="text-base sm:text-lg lg:text-xl font-semibold text-white">
                   {project.title}
                 </span>
-                <p className="text-sm sm:text-xs lg:text-base mt-1 text-justify text-gray-100">
+                <p className="text-sm sm:text-xs lg:text-base mt-1 text-gray-100">
                   {project.desc}
                 </p>
               </div>
@@ -110,21 +107,6 @@ const Project = () => {
         </div>
       </div>
 
-      {/* <div className="hidden sm:flex justify-center mt-8 space-x-4">
-        {Array.from({ length: totalPages }, (_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrentPage(i + 1)}
-            className={`text-base font-medium ${
-              currentPage === i + 1
-                ? "text-blue-600 font-bold"
-                : "text-gray-600 hover:text-blue-500"
-            }`}
-          >
-            {i + 1}
-          </button>
-        ))}
-      </div> */}
       <div className="sm:hidden flex flex-row space-x-4 py-2 overflow-x-auto scrollbar-hide">
         {projects.map((project, index) => (
           <div
@@ -140,22 +122,7 @@ const Project = () => {
               }}
             ></div>
             <div className="relative px-4 py-6">
-              <div className="absolute -top-5 left-6 bg-blue-500 text-white p-2 rounded-full shadow-md">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 5v14l7-7 7 7V5a2 2 0 00-2-2H7a2 2 0 00-2 2z"
-                  />
-                </svg>
-              </div>
+           
               <h4 className="font-semibold text-xl text-gray-900">
                 {project.title}
               </h4>
@@ -164,7 +131,7 @@ const Project = () => {
               </p>
               <a
                 href="#"
-                className="group inline-flex items-center gap-2 text-xs mt-4 px-5 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-sm ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                className="group inline-flex items-center gap-2 text-sm mt-4 px-5 py-1.5 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-sm ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition-all duration-300"
               >
                 <span className="transition-colors duration-300 group-hover:text-white">
                   See More Of Our Works
