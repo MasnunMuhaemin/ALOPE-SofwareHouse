@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,11 @@ const Navbar = () => {
             <div className="hidden md:flex items-center gap-3 sm:gap-4 md:gap-6">
               <ul className="flex gap-4 lg:gap-6 text-sm  md:text-base text-zinc-900">
                 <li>
-                  <a href="#home" className="hover:underline">
+                  <Link to="/" className="hover:underline">
                     Home
-                  </a>
+                  </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#aboutUs" className="hover:underline">
                     About Us
                   </a>
@@ -31,11 +32,11 @@ const Navbar = () => {
                   <a href="#ourWorks" className="hover:underline">
                     Our Works
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="/allblog" className="hover:underline">
+                  <Link to="/blogs" className="hover:underline">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <button className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-xs sm:text-sm px-4 sm:px-5 lg:px-6 py-2 rounded-full">

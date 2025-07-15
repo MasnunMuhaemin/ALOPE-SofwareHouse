@@ -2,7 +2,7 @@ const AboutUs = () => {
   return (
     <>
       <section
-        className="w-full flex py-18 sm:py-0 md:py-0 lg:py-0 justify-center items-center min-h-[600px]  px-3 sm:px-6 lg:px-8 "
+        className="w-full flex py-32 justify-center items-center px-3 sm:px-6 lg:px-8 "
         id="aboutUs"
         // style={{
         //   backgroundImage:
@@ -12,7 +12,7 @@ const AboutUs = () => {
         //   backgroundPosition: "center, center",
         // }}
       >
-        <div className="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="">
             <h1 className="text-blue-600 text-2xl sm:text-3xl font-semibold mb-2">
               About Us
@@ -21,7 +21,7 @@ const AboutUs = () => {
               ALOPE is a coding knowledge sharing community for beginners.
             </p>
 
-            <div
+            {/* <div
               className="rounded-xl mx-auto p-6 sm:p-8 flex items-center justify-center max-w-sm shadow-lg"
               style={{
                 backgroundImage: 'url("/img/panda.svg")',
@@ -38,11 +38,11 @@ const AboutUs = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 ml-4">
                 ALOPE
               </h2>
-            </div>
+            </div> */}
           </div>
 
           <div className="text-gray-700 px-1.5">
-            <div className=" sm:mt-48 lg:mt-52">
+            <div className="">
               <h2 className="text-xl sm:text-2xl font-semibold mb-4">
                 Tentang ALOPE
               </h2>
