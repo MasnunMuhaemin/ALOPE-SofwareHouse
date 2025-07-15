@@ -4,8 +4,8 @@ const Footer = () => {
     <>
       <footer className="container mx-auto mt-20 flex flex-wrap gap-10 px-3 py-14 text-center md:px-8 lg:flex-nowrap lg:gap-5 lg:text-left xl:px-5 2xl:px-2">
         <div className="order-1 w-full text-center">
-          <p className="text-2xl min-md:text-4xl font-bold">Alope Software House</p>
-          <p className="my-3 lg:text-lg sm:text-lg text-xs">Kami hadir untuk bantu wujudkan solusi digital Anda!</p>
+          <p className="text-3xl min-md:text-4xl font-bold">Alope Software House</p>
+          <p className="my-3 text-sm lg:text-lg sm:text-lg">Kami hadir untuk bantu wujudkan solusi digital Anda!</p>
           <div className="text-center">
             <div className="mt-5 flex justify-center gap-4 text-gray-700">
               <a

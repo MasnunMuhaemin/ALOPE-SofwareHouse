@@ -4,17 +4,17 @@ const AboutUs = () => {
       <section
         className="w-full flex py-18 sm:py-0 md:py-0 lg:py-0 justify-center items-center min-h-[600px]  px-3 sm:px-6 lg:px-8 "
         id="aboutUs"
-        style={{
-          backgroundImage:
-            'url("/img/vector-1.svg"), url("/img/vector-2.svg")',
-          backgroundRepeat: "no-repeat, no-repeat",
-          backgroundSize: "cover, cover",
-          backgroundPosition: "center, center",
-        }}
+        // style={{
+        //   backgroundImage:
+        //     'url("/img/vector-1.svg"), url("/img/vector-2.svg")',
+        //   backgroundRepeat: "no-repeat, no-repeat",
+        //   backgroundSize: "cover, cover",
+        //   backgroundPosition: "center, center",
+        // }}
       >
         <div className="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="">
-            <h1 className="text-blue-600 text-2xl sm:text-2xl font-semibold mb-2">
+            <h1 className="text-blue-600 text-2xl sm:text-3xl font-semibold mb-2">
               About Us
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 mb-8 max-w-xl leading-snug">
@@ -46,7 +46,7 @@ const AboutUs = () => {
               <h2 className="text-xl sm:text-2xl font-semibold mb-4">
                 Tentang ALOPE
               </h2>
-              <p className="mb-6 text-sm sm:text-sm lg:text-base leading-relaxed  text-justify">
+              <p className="mb-6 text-sm sm:text-sm lg:text-base leading-relaxed">
                 ALOPE adalah sebuah komunitas programming yang memiliki visi
                 untuk berbagi ilmu dan pengalaman seputar coding, dengan tujuan
                 menciptakan lingkungan belajar yang inklusif dan mendukung bagi

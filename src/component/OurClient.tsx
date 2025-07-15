@@ -14,22 +14,22 @@ const OurClient = () => {
   return (
     <section
       className="relative flex justify-center items-center min-h-[450px] bg-[#C8DDFB]"
-      style={{
-        backgroundImage: 'url("/img/Vector-kuning.svg")',
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      // style={{
+      //   backgroundImage: 'url("/img/Vector-kuning.svg")',
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      // }}
     >
       <div className="container  mx-auto">
         <div className="max-w-7xl px-3 sm:px-6 lg:px-8 text-center">
-          <p className="text-blue-600 font-medium text-2xl lg:text-2xl">
+          <p className="text-blue-600 font-medium text-2xl lg:text-3xl">
             Our Client
           </p>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mt-1">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mt-1">
             Trusted by Various Clients and Organizations
           </h2>
-          <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto mt-2">
+          <p className="text-gray-600 text-sm sm:text-base lg:text-lg mx-auto mt-2">
             Kami telah berkesempatan bekerja dengan berbagai klien dan
             organisasi.
           </p>

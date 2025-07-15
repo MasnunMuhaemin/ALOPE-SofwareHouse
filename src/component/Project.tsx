@@ -1,8 +1,6 @@
 // import React, { useState } from "react";
 
 const Project = () => {
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const itemsPerPage = 4;
 
   const projects = [
     {
@@ -31,26 +29,23 @@ const Project = () => {
     },
   ];
 
-  // const totalPages = Math.ceil(projects.length / itemsPerPage);
-  // const indexOfLastItem = currentPage * itemsPerPage;
-  // const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  // const currentItems = projects.slice(indexOfFirstItem, indexOfLastItem);
+
 
   return (
     <section
       className="relative py-10 px-3 sm:px-6 md:px-6 lg:px-8 xl:px-8 text-black overflow-hidden"
       id="ourWorks"
-      style={{
-        backgroundImage:
-          'url("/img/biru.svg"), url("/img/ungu.svg"), url("/img/kuning.svg")',
-        backgroundRepeat: "no-repeat, no-repeat",
-        backgroundSize: "cover, cover",
-        backgroundPosition: "center, center",
-      }}
+      // style={{
+      //   backgroundImage:
+      //     'url("/img/biru.svg"), url("/img/ungu.svg"), url("/img/kuning.svg")',
+      //   backgroundRepeat: "no-repeat, no-repeat",
+      //   backgroundSize: "cover, cover",
+      //   backgroundPosition: "center, center",
+      // }}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-4 sm:mb-10">
-          <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold">
+          <h2 className="text-3xl xl:text-4xl font-bold">
             <span className="text-blue-500">Our</span> Works
           </h2>
 
@@ -77,13 +72,13 @@ const Project = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className=" text-white p-4 lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start min-h-[300px]"
-              style={{
-                backgroundImage: 'url("/img/rectangle.svg")',
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className="bg-blue-400 p-4  lg:mb-16 sm:p-6 xl:p-8 rounded-xl shadow-lg flex flex-col sm:flex-row items-start"
+              // style={{
+              //   backgroundImage: 'url("/img/rectangle.svg")',
+              //   backgroundRepeat: "no-repeat",
+              //   backgroundSize: "cover",
+              //   backgroundPosition: "center",
+              // }}
             >
               <div className="w-full sm:w-1/2 relative">
                 <h3 className="text-gray-200 text-base sm:text-lg xl:text-xl font-semibold py-2">
@@ -94,7 +89,7 @@ const Project = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className=" w-full left-0 object-cover"
+                    className=" w-full h-full left-0 object-cover"
                   />
                 </div>
               </div>
@@ -112,21 +107,6 @@ const Project = () => {
         </div>
       </div>
 
-      {/* <div className="hidden sm:flex justify-center mt-8 space-x-4">
-        {Array.from({ length: totalPages }, (_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrentPage(i + 1)}
-            className={`text-base font-medium ${
-              currentPage === i + 1
-                ? "text-blue-600 font-bold"
-                : "text-gray-600 hover:text-blue-500"
-            }`}
-          >
-            {i + 1}
-          </button>
-        ))}
-      </div> */}
       <div className="sm:hidden flex flex-row space-x-4 py-2 overflow-x-auto scrollbar-hide">
         {projects.map((project, index) => (
           <div
@@ -151,7 +131,7 @@ const Project = () => {
               </p>
               <a
                 href="#"
-                className="group inline-flex items-center gap-2 text-xs mt-4 px-5 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-sm ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                className="group inline-flex items-center gap-2 text-sm mt-4 px-5 py-1.5 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-sm ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition-all duration-300"
               >
                 <span className="transition-colors duration-300 group-hover:text-white">
                   See More Of Our Works

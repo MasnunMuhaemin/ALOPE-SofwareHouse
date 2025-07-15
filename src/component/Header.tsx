@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header className="relative w-full px-0 " id="home">
-      <img
+      {/* <img
         src="/img/ungu.svg"
         alt=""
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
@@ -15,16 +15,16 @@ const Header = () => {
         src="/img/kuning.svg"
         alt=""
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-      />
-      <div className="container mx-auto  w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-6 lg:px-8 xl:px-12">
+      /> */}
+      <div className="container mx-auto w-full min-h-screen xl:min-h-[700px] flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-6 lg:px-8 xl:px-12">
         <div className="w-full md:w-1/2 text-center sm:text-left  sm:mt-24 lg:mt-28 lg:text-left order-2 md:order-1">
-          <h2 className="text-3xl lg:text-5xl xl:text-5xl font-bold text-slate-900 mb-2">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-bold text-slate-900 mb-2">
             Solusi Pembuatan
           </h2>
-          <p className="text-3xl lg:text-5xl xl:text-5xl font-bold text-blue-500 mb-4">
+          <p className="text-3xl sm:text-4xl lg:text-5xl xl:text-5xl font-bold text-blue-500 mb-4">
             Software <span className="text-zinc-950">Anda</span>
           </p>
-          <p className="text-slate-500 text-sm md:text-sm lg:text-xl xl:text-xl mb-6 leading-relaxed">
+          <p className="text-slate-500 text-sm lg:text-xl xl:text-xl mb-6 leading-relaxed">
             Kami membantu bisnis Anda berkembang melalui{" "}
             <br className="hidden md:block" />
             solusi kreatif kami. Tenang saja, mari bekerja sama.
@@ -32,7 +32,7 @@ const Header = () => {
           <div className="flex gap-4 justify-center sm:justify-start mb-16">
             <a
               href="#"
-              className="group flex items-center gap-10 text-base  px-8 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-md ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition duration-300"
+              className="group flex items-center gap-10 sm:text-sm lg:text-base  px-8 py-2 border border-blue-600 text-blue-600 rounded-full font-medium bg-white shadow-md ring-1 ring-blue-300/40 hover:bg-blue-600 hover:text-white transition duration-300"
             >
               Explore
               <svg

@@ -67,7 +67,7 @@ const Navbar = () => {
             <span className="text-2xl">&times;</span>
           </button>
         </div>
-        <ul className="flex flex-col gap-4 p-4 text-sm text-zinc-900">
+        <ul className="flex flex-col gap-4 p-4 text-base text-zinc-900">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -82,7 +82,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="px-4">
-          <button className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-sm px-4 sm:px-5 lg:px-6 py-2 rounded-full">
+          <button className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-sm px-4 sm:px-5 lg:px-6 py-1.5 rounded-full">
             Get In Touch
           </button>
         </div>
