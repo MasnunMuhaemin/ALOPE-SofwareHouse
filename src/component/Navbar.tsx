@@ -33,7 +33,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#home" className="hover:underline">
+                  <a href="/allblog" className="hover:underline">
                     Blog
                   </a>
                 </li>
