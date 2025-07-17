@@ -38,13 +38,7 @@ const Testimonial = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-blue-100 relative rounded-2xl px-6 py-8 "
-              // style={{
-              //   backgroundImage: 'url("/img/rectangle-say.svg")',
-              //   backgroundRepeat: "no-repeat",
-              //   backgroundSize: "cover",
-              //   backgroundPosition: "center",
-              // }}
+              className="bg-gradient-to-tr from-blue-300 to-blue-100 relative rounded-2xl px-6 py-8 "
             >
               <div className="hidden sm:block lg:block">
                 <div className=" absolute -top-4 -right-4 rounded-tr-3xl bg-blue-600 w-12 h-12 flex items-center justify-center shadow-lg">

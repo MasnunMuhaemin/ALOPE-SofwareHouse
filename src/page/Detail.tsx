@@ -1,4 +1,4 @@
-import Navbar from "../component/Navbar";
+import Navbar from "../component/layout/Navbar";
 import data from "../data/project.json";
 import { useParams } from "react-router-dom";
 

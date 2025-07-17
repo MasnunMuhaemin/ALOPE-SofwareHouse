@@ -1,36 +1,35 @@
-import Navbar from "../component/Navbar";
-import Footer from "../component/Footer";
+import Navbar from "../component/layout/Navbar";
+import Footer from "../component/layout/Footer";
+import BlogCard from "../component/element/BlogCard";
 const AllBlog = () => {
   const blogs = [
     {
-      image: "/img/alope.jpg",
-      tag: "Frontend",
-      title: "Mengenal React dari Nol",
+      id: 1,
+      image: "/img/nuteam.png",
+      heading: "Website",
+      title: "Nuteam",
+      desc: "Penyusunan tampilan web yang rapi dan responsif menggunakan teknik CSS modern.",
     },
     {
-      image: "/img/alope.jpg",
-      tag: "Backend",
-      title: "Belajar Node.js dan Express",
+      id: 2,
+      image: "/img/safrenz.png",
+      heading: "Website",
+      title: "Safrenz",
+      desc: " Halaman promosi yang dirancang untuk menarik perhatian dan meningkatkan konversi.",
     },
     {
-      image: "/img/alope.jpg",
-      tag: "Technology",
-      title: "Tren Teknologi 2025",
+      id: 3,
+      image: "/img/invitations.png",
+      heading: "mobile",
+      title: "Wedding",
+      desc: "Pengembangan aplikasi mobile lintas platform dengan performa tinggi menggunakan React Native.",
     },
     {
-      image: "/img/alope.jpg",
-      tag: "Frontend",
-      title: "Mengoptimalkan Tailwind CSS",
-    },
-    {
-      image: "/img/alope.jpg",
-      tag: "Backend",
-      title: "API REST vs GraphQL",
-    },
-    {
-      image: "/img/alope.jpg",
-      tag: "Technology",
-      title: "Apa itu AI dan Machine Learning?",
+      id: 4,
+      image: "/img/travelop.png",
+      heading: "Website",
+      title: "Traveloop",
+      desc: "Desain antarmuka aplikasi mobile yang estetis, intuitif, dan fokus pada pengalaman pengguna.",
     },
   ];
 
@@ -87,30 +86,19 @@ const AllBlog = () => {
       </div>
       {/* Blog cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blogs.map((blog, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl overflow-hidden shadow-md"
-          >
-            <img
-              src={blog.image}
-              alt={blog.title}
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <span className="inline-block text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full mb-2">
-                {blog.tag}
-              </span>
-              <h3 className="text-sm font-semibold leading-snug text-gray-800 mb-1">
-                {blog.title}
-              </h3>
-              <p className="text-xs text-gray-600">
-                Lorem ipsum dolor sit amet consectetur. Sit arcu fusce eros ac.
-              </p>
-            </div>
-          </div>
+        {blogs.map((blog) => (
+          <BlogCard
+            key={blog.id}
+            id={blog.id}
+            image={blog.image}
+            heading={blog.heading}
+            title={blog.title}
+            desc={blog.desc}
+            // link={`/detail/${id}`}
+          />
         ))}
       </div>
+
       <Footer />
     </div>
   );
