@@ -38,23 +38,17 @@ const Testimonial = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative rounded-2xl px-6 py-8 "
-              style={{
-                backgroundImage: 'url("/img/rectangle-say.svg")',
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
+              className="bg-gradient-to-tr from-blue-300 to-blue-100 relative rounded-2xl px-6 py-8 "
             >
               <div className="hidden sm:block lg:block">
                 <div className=" absolute -top-4 -right-4 rounded-tr-3xl bg-blue-600 w-12 h-12 flex items-center justify-center shadow-lg">
                   <QuoteIcon className="text-white w-5 h-5" />
                 </div>
               </div>
-              <h3 className="text-lg lg:px-4 text-gray-900 font-semibold lg:text-xl mb-2">
+              <h3 className="text-xl lg:px-4 text-gray-900 font-semibold lg:text-xl mb-2">
                 {testimonial.name}
               </h3>
-              <p className="text-xs lg:text-base lg:px-4 text-gray-600 line-clamp-4  lg:line-clamp-5">
+              <p className="text-sm lg:text-base lg:px-4 text-gray-600 line-clamp-4  lg:line-clamp-5">
                 {testimonial.message}
               </p>
 

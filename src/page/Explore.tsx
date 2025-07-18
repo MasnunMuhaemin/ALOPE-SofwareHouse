@@ -1,6 +1,6 @@
-import Navbar from "../component/Navbar";
-import Footer from "../component/Footer";
-import Card from "../component/Card";
+import Navbar from "../component/layout/Navbar";
+import Footer from "../component/layout/Footer";
+import Card from "../component/element/Card";
 
 const projects = [
   {

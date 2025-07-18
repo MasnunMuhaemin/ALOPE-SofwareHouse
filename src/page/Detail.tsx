@@ -1,4 +1,4 @@
-import Navbar from "../component/Navbar";
+import Navbar from "../component/layout/Navbar";
 import data from "../data/project.json";
 import { useParams } from "react-router-dom";
 
@@ -6,17 +6,26 @@ const Detail = () => {
   const { id } = useParams();
   const project = data.find((p) => p.id === Number(id));
 
-  if (!project) return <div>Project not found</div>; 
+  if (!project) return <div>Project not found</div>;
 
   const { title, mainImage, info, sections } = project;
 
   return (
     <>
       <Navbar />
+      <img
+        src="/img/ungu.svg"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        loading="lazy"
+      />
+      <img
+        src="/img/biru.svg"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        loading="lazy"
+      />
       <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24 overflow-hidden">
         <div className="relative mt-10 py-10 space-y-10">
-          <div className="absolute inset-0 -z-10">
-          </div>
+          <div className="absolute inset-0 -z-10"></div>
 
           <div className="z-10">
             <div
