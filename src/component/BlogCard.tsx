@@ -1,6 +1,10 @@
+interface BlogCardProps {
+  image: string;
+  tag: string;
+  title: string;
+}
 
-
-const BlogCard = ({ image, tag, title }) => {
+const BlogCard = ({ image, tag, title }: BlogCardProps) => {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-md">
       <img src={image} alt={title} className="w-full h-40 object-cover" />
