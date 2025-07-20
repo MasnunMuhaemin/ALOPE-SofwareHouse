@@ -1,4 +1,5 @@
 import Navbar from "../component/layout/Navbar";
+import Footer from "../component/layout/Footer";
 import data from "../data/project.json";
 import { useParams } from "react-router-dom";
 
@@ -13,21 +14,15 @@ const Detail = () => {
   return (
     <>
       <Navbar />
-      <img
-        src="/img/ungu.svg"
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-        loading="lazy"
-      />
-      <img
-        src="/img/biru.svg"
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-        loading="lazy"
-      />
-      <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24 overflow-hidden">
-        <div className="relative mt-10 py-10 space-y-10">
-          <div className="absolute inset-0 -z-10"></div>
-
-          <div className="z-10">
+      <div className="relative z-0">
+        <img
+          src="/img/svg/Vector-12.svg"
+          className="absolute top-[20px] left-0 w-[800px] max-w-none pointer-events-none z-0"
+          alt="Blue Decoration"
+          loading="lazy"
+        />
+        <div className="relative z-10 container mx-auto px-4 sm:px-8 md:px-16 lg:px-24 overflow-hidden">
+          <div className="mt-10 py-10 space-y-10">
             <div
               onClick={() => window.history.back()}
               className="inline-flex items-center space-x-1 border border-[#5998F4] text-[#5998F4] hover:text-blue-800 text-xs sm:text-sm px-2 py-0.5 sm:px-3 sm:py-1 rounded-full cursor-pointer"
@@ -85,6 +80,7 @@ const Detail = () => {
                 className="mx-auto w-full max-w-6xl object-cover mb-0"
               />
             </div>
+
             <p className="border-b-2 border-[#5998F4] w-40 sm:w-60 mx-auto mt-4 mb-6"></p>
             {sections.map((section, index) => (
               <div
@@ -136,7 +132,25 @@ const Detail = () => {
             ))}
           </div>
         </div>
+        <div className="relative h-[100px] overflow-visible">
+          <img
+            src="/img/svg/Vector-11.svg"
+            className="absolute top-[-1000%] right-0 w-[700px] pointer-events-none"
+            alt="Yellow Decoration"
+            loading="lazy"
+          />
+        </div>
+        <div className="relative mt-20">
+          <img
+            src="/img/svg/Vector-13.svg"
+            className="absolute bottom-[-150px] left-0 w-[800px] pointer-events-none"
+            alt="Purple Decoration"
+            loading="lazy"
+          />
+        </div>
       </div>
+
+      <Footer />
     </>
   );
 };
