@@ -38,7 +38,7 @@ const Header = () => {
           <Button
             title="Explore"
             className="mb-10 justify-center sm:justify-start"
-            href="#footer"
+            href="/explore"
           />
         </div>
 
