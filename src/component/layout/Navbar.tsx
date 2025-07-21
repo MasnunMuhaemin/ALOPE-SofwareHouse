@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,11 @@ const Navbar = () => {
             <div className="hidden md:flex items-center gap-3 sm:gap-4 md:gap-6">
               <ul className="flex gap-4 lg:gap-6 text-sm  md:text-base text-zinc-900">
                 <li>
-                  <a href="#home" className="hover:underline">
+                  <Link to="/" className="hover:underline">
                     Home
-                  </a>
+                  </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#aboutUs" className="hover:underline">
                     About Us
                   </a>
@@ -31,11 +32,11 @@ const Navbar = () => {
                   <a href="#ourWorks" className="hover:underline">
                     Our Works
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="/allblog" className="hover:underline">
+                  <Link to="/blogs" className="hover:underline">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <button className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-xs sm:text-sm px-4 sm:px-5 lg:px-6 py-2 rounded-full">
@@ -62,29 +63,37 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-between items-center px-4 py-2">
-          <h3 className="font-bold text-lg">Menu</h3>
+          <h3 className="font-bold text-xl">Menu</h3>
           <button onClick={closeSidebar} aria-label="Close">
             <span className="text-2xl">&times;</span>
           </button>
         </div>
-        <ul className="flex flex-col gap-4 p-4 text-xs text-zinc-900">
+        <ul className="flex flex-col gap-4 p-4 text-base text-zinc-900">
           <li>
-            <a href="#home">Home</a>
+            <Link to="/" className="hover:underline">
+              Home
+            </Link>
           </li>
+          {/* <li>
+                  <a href="#aboutUs" className="hover:underline">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#ourWorks" className="hover:underline">
+                    Our Works
+                  </a>
+                </li> */}
           <li>
-            <a href="#course">Learning</a>
-          </li>
-          <li>
-            <a href="#article">Blog</a>
-          </li>
-          <li>
-            <a href="#about">About Us</a>
+            <Link to="/blogs" className="hover:underline">
+              Blog
+            </Link>
           </li>
         </ul>
         <div className="px-4">
-          <button className="w-[100px] bg-blue-500 hover:bg-blue-500 text-white py-1 rounded-full">
-            Contact Us
-          </button>
+          <a href="#footer" className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-sm px-4 sm:px-5 lg:px-6 py-1.5 rounded-full">
+            Get In Touch
+          </a>
         </div>
       </div>
 

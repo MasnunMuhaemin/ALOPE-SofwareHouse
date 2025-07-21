@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Mengenal React Dari Nol",
+    "category": "Frontend",
+    "image": "/img/blogheader.png",
+    "author": "Firdan Fauzan",
+    "date": "20/07/2025",
+    "content": "Isi blog 1..."
+  },
+  {
+    "id": 2,
+    "title": "Belajar Node.js dan Express",
+    "category": "Backend",
+    "image": "/img/blogheader.png",
+    "author": "Firdan Fauzan",
+    "date": "21/07/2025",
+    "content": "Isi blog 2..."
+  },
+  {
+    "id": 3,
+    "title": "Tren Teknologi 2025",
+    "category": "Technology",
+    "image": "/img/blogheader.png",
+    "author": "Firdan Fauzan",
+    "date": "22/07/2025",
+    "content": "Isi blog 3..."
+  },
+  {
+    "id": 4,
+    "title": "Mengoptimalkan Tailwind CSS",
+    "category": "Frontend",
+    "image": "/img/blogheader.png",
+    "author": "Firdan Fauzan",
+    "date": "23/07/2025",
+    "content": "Isi blog 4..."
+  },
+  {
+    "id": 5,
+    "title": "API Rest vs GraphQL",
+    "category": "Backend",
+    "image": "/img/blogheader.png",
+    "author": "Firdan Fauzan",
+    "date": "24/07/2025",
+    "content": "Isi blog 5..."
+  },
+  {
+    "id": 6,
+    "title": "Apa itu AI dan Machine Learning",
+    "category": "Technology",
+    "image": "/img/blogheader.png",
+    "author": "Firdan Fauzan",
+    "date": "25/07/2025",
+    "content": "Isi blog 6..."
+  }
+]

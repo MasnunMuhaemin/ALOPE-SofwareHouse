@@ -1,21 +1,21 @@
-import Navbar from "../component/Navbar";
+import Navbar from "../component/layout/Navbar";
 
-import Footer from "../component/Footer";
-import Header from "../component/Header";
-import WhatWeDo from "../component/WhatWeDo";
-import Project from "../component/Project";
-import OurClient from "../component/OurClient";
-import Testimonial from "../component/Testimonial";
-import AboutUs from "../component/AboutUs";
+import Footer from "../component/layout/Footer";
+import WhatWeDo from "../component/section/WhatWeDo";
+import Project from "../component/section/Project";
+import OurClient from "../component/section/OurClient";
+import Testimonial from "../component/section/Testimonial";
+import Header from "../component/layout/Header";
+import AboutUs from "../component/section/AboutUs";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Header />
+      <AboutUs />
       <WhatWeDo />
       <OurClient />
-      <AboutUs />
       <Project />
       <Testimonial />
       <Footer />
