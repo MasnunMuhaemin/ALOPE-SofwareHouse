@@ -3,7 +3,7 @@ import Home from "./page/Home";
 import Explore from "./page/Explore";
 import Detail from "./page/Detail";
 import AllBlog from "./page/AllBlog";
-import DetailBlog from "./page/DetailBlog"; // pastikan file ini ada
+import DetailBlog from "./page/DetailBlog";
 
 export default function App() {
   return (

@@ -7,13 +7,13 @@ import blogDetails from "../data/blogDetail.json";
 import recommendedBlogs from "../data/recommendedBlogs.json";
 
 export default function DetailBlog() {
-  const { id } = useParams(); // Ambil ID dari URL
+  const { id } = useParams();
   const blog = blogDetails.find((item) => item.id === parseInt(id || "0"));
 
   const [isMobile, setIsMobile] = useState(false);
   const [showFullContent, setShowFullContent] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(3);
 
-  // Responsif
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -23,7 +23,6 @@ export default function DetailBlog() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Scroll ke atas ketika id berubah
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
@@ -83,7 +82,7 @@ export default function DetailBlog() {
           {displayedContent}
         </div>
 
-        {/* Tombol lihat selengkapnya */}
+        {/* lihat selengkapnya */}
         {isMobile && (
           <button
             onClick={() => setShowFullContent(!showFullContent)}
@@ -96,7 +95,7 @@ export default function DetailBlog() {
         {/* Artikel Rekomendasi */}
         <div className="mt-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {recommendedBlogs.map((item, index) => {
+            {recommendedBlogs.slice(0, visibleCount).map((item, index) => {
               const dummyDate = new Date(2024, 6, 1 + index);
               const formattedDate = dummyDate.toLocaleDateString("id-ID");
 
@@ -124,6 +123,27 @@ export default function DetailBlog() {
               );
             })}
           </div>
+
+          {recommendedBlogs.length > 3 && (
+            <div className="text-center mt-6">
+              <button
+                onClick={() =>
+                  setVisibleCount(
+                    visibleCount === 3 ? recommendedBlogs.length : 3
+                  )
+                }
+                className="mt-10 text-blue-500 border border-blue-500 rounded-full py-1 px-3 hover:text-white hover:bg-blue-500 font-semibold text-md transition-colors duration-300 ease-in-out"
+              >
+                {visibleCount === 3 ? (
+                  <>
+                    See More <span>→</span>
+                  </>
+                ) : (
+                  <>See Less</>
+                )}
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
