@@ -17,7 +17,7 @@ const Detail = () => {
       <div className="relative z-0">
         <img
           src="/img/svg/Vector-12.svg"
-          className="absolute top-[20px] left-0 w-[800px] max-w-none pointer-events-none z-0"
+          className="absolute top-[20px] left-0 w-[350px] sm:w-[500px] lg:w-[700px] xl:w-[800px] max-w-none pointer-events-none z-0"
           alt="Blue Decoration"
           loading="lazy"
         />
@@ -73,7 +73,7 @@ const Detail = () => {
                 ))}
               </div>
             </div>
-            <div className="bg-gradient-to-b from-[#5998F4] to-[#C8DDFB] p-4 pb-0 rounded-xl mt-10">
+            <div className="bg-gradient-to-b from-[#5998F4] to-[#C8DDFB] p-4 pb-0 rounded-xl mt-10 hidden sm:block">
               <img
                 src={mainImage}
                 alt="Main Project"
@@ -81,7 +81,7 @@ const Detail = () => {
               />
             </div>
 
-            <p className="border-b-2 border-[#5998F4] w-40 sm:w-60 mx-auto mt-4 mb-6"></p>
+            <p className="border-b-2 border-[#5998F4] w-40 sm:w-60 mx-auto mt-4 mb-6 hidden sm:block"></p>
             {sections.map((section, index) => (
               <div
                 key={index}
@@ -135,7 +135,7 @@ const Detail = () => {
         <div className="relative h-[100px] overflow-visible">
           <img
             src="/img/svg/Vector-11.svg"
-            className="absolute top-[-1000%] right-0 w-[700px] pointer-events-none"
+            className="absolute top-[-1000%] right-0 w-[350px] sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px] max-w-none pointer-events-none"
             alt="Yellow Decoration"
             loading="lazy"
           />
@@ -143,7 +143,7 @@ const Detail = () => {
         <div className="relative mt-20">
           <img
             src="/img/svg/Vector-13.svg"
-            className="absolute bottom-[-150px] left-0 w-[800px] pointer-events-none"
+            className="absolute bottom-[-30px] sm:bottom-[-130px] md:bottom-[-140px] lg:bottom-[-150px] left-0 w-[350px] sm:w-[400px] md:w-[600px] lg:w-[700px] xl:w-[800px] max-w-none pointer-events-none"
             alt="Purple Decoration"
             loading="lazy"
           />
