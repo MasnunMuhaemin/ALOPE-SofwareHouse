@@ -101,11 +101,11 @@ export default function DetailBlog() {
 
               return (
                 <Link to={`/detailblog/${item.id}`} key={item.id}>
-                  <div className="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+                  <div className="rounded-xl overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-40 object-cover"
+                      className="w-full rounded-xl h-50 object-cover"
                     />
                     <div className="p-4">
                       <span className="inline-block text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full mb-2">

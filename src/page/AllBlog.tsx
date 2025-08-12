@@ -73,7 +73,7 @@ const AllBlog = () => {
           </label>
           <select
             id="sort"
-            className="rounded px-2 py-1 bg-blue-100 ring-blue-500 shadow-md hover:bg-blue-200 transition-colors duration-300"
+            className="rounded-sm px-2 py-1 bg-blue-100 ring-blue-500 shadow-md hover:bg-blue-200 transition-colors duration-300"
           >
             <option>Newest</option>
             <option>Oldest</option>
@@ -94,12 +94,12 @@ const AllBlog = () => {
             <a
               href={`/detailblog/${blog.id}`}
               key={index}
-              className="rounded-xl overflow-hidden shadow-md bg-white hover:shadow-lg transition-shadow duration-300"
+              className="rounded-xl overflow-hidden"
             >
               <img
                 src={blog.image}
                 alt={blog.title}
-                className="w-full h-40 object-cover"
+                className="w-full rounded-xl h-50 object-cover"
               />
               <div className="p-4">
                 <span className="inline-block text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full mb-2">
