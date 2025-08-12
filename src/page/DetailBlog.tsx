@@ -132,7 +132,7 @@ export default function DetailBlog() {
                     visibleCount === 3 ? recommendedBlogs.length : 3
                   )
                 }
-                className="mt-10 text-blue-500 border border-blue-500 rounded-full py-1 px-3 hover:text-white hover:bg-blue-500 font-semibold text-md transition-colors duration-300 ease-in-out"
+                className="mt-5 text-blue-500 border border-blue-500 rounded-full py-1 px-3 hover:text-white hover:bg-blue-500 font-semibold text-md transition-colors duration-300 ease-in-out"
               >
                 {visibleCount === 3 ? (
                   <>
