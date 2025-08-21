@@ -38,6 +38,11 @@ const Navbar = () => {
                     Blog
                   </Link>
                 </li>
+                <li>
+                  <Link to="/explore" className="hover:underline">
+                    Explore
+                  </Link>
+                </li>
               </ul>
               <button className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-xs sm:text-sm px-4 sm:px-5 lg:px-6 py-2 rounded-full">
                 Get In Touch
@@ -89,9 +94,24 @@ const Navbar = () => {
               Blog
             </Link>
           </li>
+          {/* <li>
+                  <a href="#aboutUs" className="hover:underline">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#ourWorks" className="hover:underline">
+                    Our Works
+                  </a>
+                </li> */}
+          <li>
+            <Link to="/explore" className="hover:underline">
+              Explore
+            </Link>
+          </li>
         </ul>
         <div className="px-4">
-          <a href="#footer" className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-sm px-4 sm:px-5 lg:px-6 py-1.5 rounded-full">
+          <a href="#footer" className="bg-blue-500 shadow-md hover:bg-blue-600 text-white text-base px-4 sm:px-5 lg:px-6 py-2 rounded-full">
             Get In Touch
           </a>
         </div>
