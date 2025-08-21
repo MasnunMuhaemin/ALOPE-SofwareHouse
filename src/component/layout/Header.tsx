@@ -39,7 +39,6 @@ const Header = () => {
             title="Explore"
             className="mb-10 justify-center sm:justify-start"
             href="/explore"
-            customClass="bg-white"
           />
         </div>
 
