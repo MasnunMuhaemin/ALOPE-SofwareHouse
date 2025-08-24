@@ -23,7 +23,7 @@ const Solution = () => {
             <Button
               title="Coba Sekarang"
               href="#footer"
-              customClass="bg-transparent border-blue-600 text-blue-600"
+              className="bg-transparent border-blue-600 text-blue-600"
             />
           </div>
 
@@ -39,7 +39,7 @@ const Solution = () => {
             <Button
               title="Coba Sekarang"
               href="#footer"
-              customClass="bg-transparent border-blue-600 text-blue-600"
+              className="bg-transparent border-blue-600 text-blue-600"
             />
           </div>
         </div>
